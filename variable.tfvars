@@ -2,8 +2,8 @@ variable "name" {
     type = string
     description = "Beschreibung des Namens der RessourcenGruppen"
 
-    default = "marcus_wunderle_rg"
-    name = "marcus_wunderle_rg"
+    default = "marcus_wunderle_rg1"
+    name = "marcus_wunderle_rg1"
 }
 
 variable "location" {

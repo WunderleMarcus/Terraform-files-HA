@@ -1,12 +1,12 @@
 # deklaration der ressourcen gruppe und location
 locals {
- Ressource_Group_Name = "marcus-wunderle-rg"
+ Ressource_Group_Name = "marcus-wunderle-rg1"
  Ressource_Group_Location = "West Europe"
 }
 
 
 ## resourcen gruppe erstellen
-resource "azurerm_resource_group" "marcus-wunderle-rg" {
+resource "azurerm_resource_group" "marcus-wunderle-rg1" {
   name     = local.Ressource_Group_Name
   location = local.Ressource_Group_Location
 }
@@ -21,7 +21,7 @@ resource "azurerm_storage_account" "demo_account_marcus" {
   account_replication_type = "LRS"
   account_kind             = "StorageV2"
   depends_on = [
-    azurerm_resource_group.marcus-wunderle-rg
+    azurerm_resource_group.marcus-wunderle-rg1
   ]
 }
 
